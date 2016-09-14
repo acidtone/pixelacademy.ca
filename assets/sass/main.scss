@@ -638,6 +638,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		min-height: 3.5em;
 
 		h1 {
 			font-weight: 900;
@@ -1202,7 +1203,7 @@
 
 		/* Header */
 
-			#header {
+			#logo{
 				display: none;
 			}
 

@@ -1,30 +1,31 @@
-<!--This is a comment tag on one line. -->
+<!--This is a comment tag on one line. They are not displayed on the web page. -->
 <!--
-<!DOCTYPE> (below) informs the browser which version of HTML (or XML) you used to write the document. Doctype is a declaration, not a tag; you can also refer to it as "document type declaration", or "DTD" for short. This is a mandatory tag and can also be lowercase.
+    <!DOCTYPE> (below) informs the browser which version of HTML (or XML) you used to write the document. Doctype is a declaration, not a tag; you can also refer to it as "document type declaration", or "DTD" for short. This is a mandatory tag and can also be lowercase.
 -->
 <!doctype html>
  <html>
 <!--
-The HTML <head> element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
+    The HTML <head> element provides general information (metadata) about the document, including its title and links to its scripts and style sheets.
  -->
     <head>
 <!--
-The HTML <title> element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text, and any contained tags are ignored. There can only be one <title> element per document.
+    The HTML <title> element defines the title of the document, shown in a browser's title bar or on the page's tab. It can only contain text, and any contained tags are ignored. There can only be one <title> element per document.
 -->    
         <title>HTML5 Cheatsheet</title>
 <!--
-The HTML <meta> element represents any metadata information that cannot be represented by one of the other HTML meta-related elements (<base>, <link>, <script>, <style> or <title>).
+    The HTML <meta> element represents any metadata information that cannot be represented by one of the other HTML meta-related elements (<base>, <link>, <script>, <style> or <title>).
 -->
         <meta charset="utf-8">
 <!--
-The HTML <link> element specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
+    The HTML <link> element specifies relationships between the current document and an external resource. Possible uses for this element include defining a relational framework for navigation. This Element is most used to link to style sheets.
 
-reveal.css is the base stylesheet for the reveal.js presentation framework. The following stylesheet is an optional theme to make things look pretty/unique.
+    reveal.css is the base stylesheet for the reveal.js presentation framework. The following stylesheet is an optional theme to make things look pretty/unique.
 -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/black.css">
 
-<!-- Optional reveal.js themes for extra sugar and spice. Replace the white.css <link> tag above with one of the following <link> tags to change the look of your presentation. You should only have one theme active at a time.
+<!-- 
+    Optional reveal.js themes for extra sugar and spice. Replace the white.css <link> tag above with one of the following <link> tags to change the look of your presentation. You should only have one theme active at a time.
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/white.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/beige.css">
@@ -40,12 +41,15 @@ reveal.css is the base stylesheet for the reveal.js presentation framework. The 
 
 -->
 
+<!--
+    This <link> element imports Font Awesome icon fonts. http://fontawesome.io/
+-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 <!--
-The HTML <style> element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.
+    The HTML <style> element contains style information for a document, or part of a document. By default, the style instructions written inside that element are expected to be CSS.
 
-This <style> tag was included to override reveal.js behaviour (reveal.js displays <h1>-<h6> tags in uppercase by default).
+    This <style> tag was included to override reveal.js behaviour (reveal.js displays <h1>-<h6> tags in uppercase by default).
 -->
         <style rel="stylesheet">
             .reveal section h1,
@@ -59,19 +63,23 @@ This <style> tag was included to override reveal.js behaviour (reveal.js display
         </style>
     </head>
 <!--
-The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a document.
+    The HTML <body> Element represents the content of an HTML document. There can be only one <body> element in a document.
 -->
     <body>
 <!--
     The HTML <main> element represents the main content of  the <body> of a document or application. The main content area consists of content that is directly related to, or expands upon the central topic of a document or the central functionality of an application.
+
+    Reveal.js needs class="reveal" to function properly. <div class="reveal"> can also be used but <main> is more semantic and nerdy.
 -->
         <main class="reveal">
 <!--
-The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry.
+    The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry.
+
+    Reveal.js needs class="slides" to function properly. <div class="slides"> can also be used but <article> is more semantic and nerdy.
 -->
             <article class="slides">
 <!--
-The HTML <section> element represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading.
+    The HTML <section> element represents a generic section of a document, i.e., a thematic grouping of content, typically with a heading.
 -->
                 <section id="table-contents">
                     <h2>HTML5 Cheatsheet</h2>
@@ -292,7 +300,7 @@ The HTML <section> element represents a generic section of a document, i.e., a t
                     </section>
                     <section class="example">
 <!-- 
-<figure> and <figcaption> are semantic elements that are optional but show good Internet citizenship. The title attribute shows as a tooltip (text that shows when you hover over an element) in most browsers.
+    <figure> and <figcaption> are semantic elements that are optional but show good Internet citizenship. The title="Doggie!" attribute shows as a tooltip (text that shows when you hover over an element) in most browsers.
 -->
                         <figure>
                             <img src="images/doggie.jpg" alt="doggie" title="Doggie!">
@@ -311,7 +319,7 @@ The HTML <section> element represents a generic section of a document, i.e., a t
                     </section>
                     <section class="example">
 <!--
-The following example was copy and pasted from the "embed" link on the source ted.com page
+    The following example was copy and pasted from the "embed" link on the source ted.com page
 -->
                         <iframe src="https://embed.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
                     </section>
@@ -416,7 +424,7 @@ The following example was copy and pasted from the "embed" link on the source te
             </article>
         </main>
 <!--
-The HTML <script> element is used to embed or reference an executable script.
+    The HTML <script> element is used to embed or reference an executable script.
 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.js"></script>
         <script>
@@ -517,11 +525,11 @@ The HTML <script> element is used to embed or reference an executable script.
         </script>
     </body>
 <!--
-Some of this content is based on the MDN HTML Element Reference: https://developer.mozilla.org/en/docs/Web/HTML/Element
+    Some of this content is based on the MDN HTML Element Reference: https://developer.mozilla.org/en/docs/Web/HTML/Element
 
-Unless otherwise indicated, this content is available under the terms of the Creative Commons Attribution-ShareAlike license (CC-BY-SA), v4.0 or any later version: https://creativecommons.org/licenses/by-sa/4.0/ 
+    Unless otherwise indicated, this content is available under the terms of the Creative Commons Attribution-ShareAlike license (CC-BY-SA), v4.0 or any later version: https://creativecommons.org/licenses/by-sa/4.0/ 
 
-Reveal.js is distributed under the following license: https://github.com/hakimel/reveal.js/blob/master/LICENSE
+    Reveal.js is distributed under the following license: https://github.com/hakimel/reveal.js/blob/master/LICENSE
 -->
 
 <!-- THE END! -->

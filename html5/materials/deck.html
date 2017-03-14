@@ -1,25 +1,12 @@
 <!doctype html>
 <html>
     <head>
-        <title>Building HTML5 Presentations: For Non-coders</title>
+        <title>Building HTML5 Presentations for Non-coders</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/solarized.css">
-
-<!-- Optional stylesheet themes for extra sugar and spice.
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/beige.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/black.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/blood.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/league.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/moon.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/night.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/serif.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/simple.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/sky.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/solarized.css">
-
--->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <main class="reveal">
@@ -28,7 +15,7 @@
                     <h2>Coding HTML5 Presentations</h2>
                     <h3>For Non-coders</h3>
                     <ol>
-                        <li>Open workshop materials as project in editor</li>
+                        <li>Open workshop materials folder in editor</li>
                         <li>Open in browser:
                             <ol>
                                 <li>index.html</li>
@@ -36,20 +23,18 @@
                                 <li>deck.html (spoilers!)</li>
                             </ol>
                         </li>
+                        <li>Optional: pick a product for your presentation</li>
                     </ol>
                 </section>
                 <section id="overview">
                     <h2>Workshop Overview</h2>
                     <ol>
                         <li>HTML5 basics</li>
-                        <li>Tour of index.html</li>
-                        <li>Slide building!
-                            <ol>
-                                <li>Block-level elements</li>
-                                <li>Inline-level elements</li>
-                                <li>Media and extras</li>
-                            </ol>
-                        </li>
+                        <li>Tour: index.html</li>
+                        <li>Excercise: Customize reveal.js</li>
+                        <li>Tour: cheatsheet.html</li>
+                        <li>Tour: Browser Inspector</li>
+                        <li>Excercise: Build some slides!</li>
                     </ol>
                 </section>
                 <section id="big-picture">
@@ -58,14 +43,6 @@
                         <li>HTML: Content</li>
                         <li>CSS: Presentation</li>
                         <li>Javasctript: Behaviour</li>
-                    </ul>
-                </section>
-                <section id="viewing-code">
-                    <h2>Viewing Your Code</h2>
-                    <ul>
-                        <li>Open HTML file in editor</li>
-                        <li>Directly view source code in browser</li>
-                        <li>Inspect element in browser</li>
                     </ul>
                 </section>
                 <section id="basic-syntax">
@@ -86,20 +63,52 @@
                         <li>Use lowercase tags and attributes when possible</li>
                         <li>Indent child elements and long content for readability (whitespace generally doesn't matter)</li>
                         <li>Begin HTML5 documents with <strong>&lt;!doctype html&gt;</strong></li>
-                        <li>Close your tags (unless they're empty)</li>
+                        <li>Close your tags (unless they're "empty" tags)</li>
+                        <li>Don't mismatch your closing tags</li>
                         <li>Wrap attribute values in single or double quotes</li>
-                        <li>Link to CSS files using <strong>&lt;link&gt;</strong> not <strong>&lt;style&gt;</strong></li>
                         <li>Link to javascript files using <strong>&lt;script&gt;</strong> (with closing tag) not <strong>&lt;link&gt;</strong></li>
                     </ul>
                 </section>
-                <section id="excercise-1">
+                <section id="index-tour">
+                    <h3>Tour 1</h3>
+                    <h2><a href="" target="_blank">index.html</a></h2>
+                </section>
+                <section id="customize-reveal">
                     <h3>Excercise 1</h3>
-                    <h2>Customize Reveal.js</h2>
-                    <h4><a href="https://github.com/hakimel/reveal.js#readme" target="_blank">Reveal.js Readme</a></h4>
+                    <h2>Customize reveal.js</h2>
+                    <h3><a href="https://github.com/hakimel/reveal.js#readme" target="_blank">reveal.js readme</a></h3>
                     <ol>
-                        <li>Select a theme from the commented &lt;link&gt; tags in the &lt;head&gt; section of index.html</li>
-                        <li>Tweak the configuration settings in the &lt;style&gt; section near the bottom of index.html</li>
+                        <li>Select a theme from the commented &lt;link&gt; tags in the &lt;head&gt; section of <a href="index.html" target="_blank">index.html</a></li>
+                        <li>Tweak the configuration settings in the &lt;style&gt; section near the bottom of <a href="index.html" target="_blank">index.html</a></li>
                     </ol>
+                </section>
+                <section id="cheatsheet-tour">
+                    <h3>Tour 2</h3>
+                    <h2><a href="cheatsheet.html" target="_blank">cheatsheet.html</a></h2>
+                </section>
+                <section id="inspector-tour">
+                    <h3>Tour 3</h3>
+                    <h2>The Browser Inspector</h2>
+                    <h3>Right-click on an element <i class="fa fa-hand-o-right"></i> Inspect</h3>
+                </section>
+                <section id="slide-excercise">
+                    <h3>Excercise 2</h3>
+                    <h2>Create some slides</h2>
+                    <ol>
+                        <li>Pick your fave elements from cheatsheet.html</li>
+                        <li>Copy and paste source to index.html</li>
+                        <li>Fill in the blanks, save and reload in browser</li>
+                    </ol>
+                </section>
+                <section id="extra-credit">
+                    <h2>Extra Credit</h2>
+                    <ul>
+                        <li>Add custom  icon fonts to your slides with <a href="https://icomoon.io" target="_blank">Icomoon</a></li>
+                        <li>Add an <a href="https://css-tricks.com/lodge/svg/" target="_blank">SVG object</a> to your slides</li>
+                        <li>Add a formula to your slides with <a href="https://developer.mozilla.org/en-US/docs/Web/MathML/Authoring" target="_blank">MathML</a></li>
+                        <li>Publish your presentation to <a href="https://pages.github.com/" target="_blank">Github Pages</a></li>
+                        <li><a href="http://stackoverflow.com/questions/21115921/d3-js-code-in-reveal-js-slide" target="_blank">Add charts to your slides</a> with <a href="https://d3js.org/" target="_blank">d3.js</a></li>
+                    </ul>
                 </section>
             </article>
         </main>

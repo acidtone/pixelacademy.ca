@@ -89,8 +89,8 @@
                     <h3>Table of Contents</h3>
                     <ol>
                         <li><a href="#/resources">Resources</a></li>
-                        <li><a href="#/block-level">Block-level elements</a></li>
                         <li><a href="#/inline-level">Inline-level elements</a></li>
+                        <li><a href="#/block-level">Block-level elements</a></li>
                         <li><a href="#/media-extras">Media and extras</a></li>
                     </ol>
                 </section>
@@ -118,8 +118,90 @@
                         <li>Last resort: somebody's time (mentor, forums, etc)</li>
                     </ul>
                 </section>
-                <section id="block-level">
+                <section id="inline-level">
                     <h3>Part 1</h3>
+                    <h2>Inline-level elements</h2>
+                </section>
+                <section id="html-strong">
+                    <section class="definition">
+                        <h2>&lt;strong&gt;</h2>
+                        <p>
+                            <strong>Importance (bolding)</strong>: The HTML &lt;strong&gt; element gives text strong importance, and is typically displayed in bold.
+                        </p>
+                    </section>
+                    <section class="example">
+                        To <strong>boldly go</strong> where no nerd has gone before.
+                    </section>
+                </section>
+                <section id="html-em">
+                    <section class="definition">
+                        <h2>&lt;em&gt;</h2>
+                        <p>
+                            <strong>Emphasis (italicizing)</strong>: The HTML &lt;em&gt; element marks text that has stress emphasis. The &lt;em&gt; element can be nested, with each level of nesting indicating a greater degree of emphasis.
+                        </p>
+                    </section>
+                    <section>
+                        Sometimes you just need em<em>phas</em>is on the right syl<em>la</em>ble.
+                    </section>
+                </section>
+                <section id="html-br">
+                    <section class="definition">
+                        <h2>&lt;br&gt;</h2>
+                        <p>
+                            <strong>Line Breaks</strong>: The HTML &lt;br&gt; element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.
+                        </p>
+                    </section>
+                    <section class="example">
+                        <p>This is a paragraph.</p>
+                        <p>This is another paragraph with some<br>line<br>breaks.</p>
+                    </section>
+                </section>
+                <section>
+                    <section class="definition">
+                        <h2>&lt;q&gt;</h2>
+                        <p>
+                            <strong>Quoting</strong>: The HTML &lt;q&gt; element indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the &lt;blockquote&gt; element.
+                        </p>
+                    </section>
+                    <section class="example">
+                        As G. K. Chesterton once said, "<q>anything worth doing is worth doing badly.</q>"
+                    </section>
+                </section>
+                <section id="html-s">
+                    <section class="definition">
+                        <h2>&lt;s&gt;</h2>
+                        <p>
+                            <strong>Strikethroughs</strong>: The HTML &lt;s&gt; element renders text with a strikethrough, or a line through it. Use the &lt;s&gt; element to represent things that are no longer relevant or no longer accurate. However, &lt;s&gt; is not appropriate when indicating document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements, as appropriate.
+                        </p>
+                    </section>
+                    <section class="example">
+                        The current version of HTML is <s>HTML 4.01</s> HTML 5.
+                    </section>
+                </section>
+                <section id="html-sub">
+                    <section class="definition">
+                        <h2>&lt;sub&gt;</h2>
+                        <p>
+                            <strong>Subscripts</strong>: The HTML &lt;sub&gt; element defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.
+                        </p>
+                    </section>
+                    <section class="example">
+                        "<q>Love is in the air? Wrong! N<sub>2</sub>, O<sub>2</sub> and CO<sub>2</sub> are in the air.</q>"<br> - Sheldon Cooper
+                    </section>
+                </section>
+                <section id="html-sup">
+                    <section class="definition">
+                        <h2>&lt;sup&gt;</h2>
+                        <p>
+                            <strong>Superscript</strong>: The HTML &lt;sup&gt; element defines a span of text that should be displayed, for typographic reasons, higher, and often smaller, than the main span of text.
+                        </p>
+                    </section>
+                    <section class="example">
+                        You are wonderful<sup>squared</sup>
+                    </section>
+                </section>
+                <section id="block-level">
+                    <h3>Part 2</h3>
                     <h2>Block-level elements</h2>
                 </section>
                 <section id="html-h1-h6">
@@ -220,88 +302,6 @@
                         </dl>
                     </section>
                 </section>
-                <section id="inline-level">
-                    <h3>Part 2</h3>
-                    <h2>Inline-level elements</h2>
-                </section>
-                <section id="html-strong">
-                    <section class="definition">
-                        <h2>&lt;strong&gt;</h2>
-                        <p>
-                            <strong>Importance (bolding)</strong>: The HTML &lt;strong&gt; element gives text strong importance, and is typically displayed in bold.
-                        </p>
-                    </section>
-                    <section class="example">
-                        <p>To <strong>boldly go</strong> where no nerd has gone before.</p>
-                    </section>
-                </section>
-                <section id="html-em">
-                    <section class="definition">
-                        <h2>&lt;em&gt;</h2>
-                        <p>
-                            <strong>Emphasis (italicizing)</strong>: The HTML &lt;em&gt; element marks text that has stress emphasis. The &lt;em&gt; element can be nested, with each level of nesting indicating a greater degree of emphasis.
-                        </p>
-                    </section>
-                    <section>
-                        <p>Sometimes you just need em<em>phas</em>is on the right syl<em>la</em>ble.</p>
-                    </section>
-                </section>
-                <section id="html-br">
-                    <section class="definition">
-                        <h2>&lt;br&gt;</h2>
-                        <p>
-                            <strong>Line Breaks</strong>: The HTML &lt;br&gt; element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.
-                        </p>
-                    </section>
-                    <section class="example">
-                        <p>This is a paragraph.</p>
-                        <p>This is another paragraph with some<br>line<br>breaks.</p>
-                    </section>
-                </section>
-                <section>
-                    <section class="definition">
-                        <h2>&lt;q&gt;</h2>
-                        <p>
-                            <strong>Quoting</strong>: The HTML &lt;q&gt; element indicates that the enclosed text is a short inline quotation. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the &lt;blockquote&gt; element.
-                        </p>
-                    </section>
-                    <section class="example">
-                        <p>As G. K. Chesterton once said, "<q>anything worth doing is worth doing badly.</q>"</p>
-                    </section>
-                </section>
-                <section id="html-s">
-                    <section class="definition">
-                        <h2>&lt;s&gt;</h2>
-                        <p>
-                            <strong>Strikethroughs</strong>: The HTML &lt;s&gt; element renders text with a strikethrough, or a line through it. Use the &lt;s&gt; element to represent things that are no longer relevant or no longer accurate. However, &lt;s&gt; is not appropriate when indicating document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements, as appropriate.
-                        </p>
-                    </section>
-                    <section class="example">
-                        <p>The current version of HTML is <s>HTML 4.01</s> HTML 5.</p>
-                    </section>
-                </section>
-                <section id="html-sub">
-                    <section class="definition">
-                        <h2>&lt;sub&gt;</h2>
-                        <p>
-                            <strong>Subscripts</strong>: The HTML &lt;sub&gt; element defines a span of text that should be displayed, for typographic reasons, lower, and often smaller, than the main span of text.
-                        </p>
-                    </section>
-                    <section class="example">
-                        <p>"<q>Love is in the air? Wrong! N<sub>2</sub>, O<sub>2</sub> and CO<sub>2</sub> are in the air.</q>"<br> - Sheldon Cooper</p>
-                    </section>
-                </section>
-                <section id="html-sup">
-                    <section class="definition">
-                        <h2>&lt;sup&gt;</h2>
-                        <p>
-                            <strong>Superscript</strong>: The HTML &lt;sup&gt; element defines a span of text that should be displayed, for typographic reasons, higher, and often smaller, than the main span of text.
-                        </p>
-                    </section>
-                    <section class="example">
-                        <p>You are wonderful<sup>squared</sup></p>
-                    </section>
-                </section>
                 <section id="media-extras">
                     <h3>Part 3</h3>
                     <h2>Media and extras</h2>
@@ -314,7 +314,7 @@
                         </p>
                     </section>
                     <section class="example">
-                        <p>An anchor tag <a href="http://stackoverflow.com/questions/13052598/creating-anchor-tag-inside-anchor-tag" target="_blank">cannot contain other &lt;a&gt; tags</a>.
+                        An anchor tag <a href="http://stackoverflow.com/questions/13052598/creating-anchor-tag-inside-anchor-tag" target="_blank">cannot contain other &lt;a&gt; tags</a>.
                     </section>
                 </section>
                 <section id="html-img">
@@ -331,11 +331,7 @@
 <!-- 
     <figure> and <figcaption> are semantic elements that are optional but show good Internet citizenship. The title="Doggie!" attribute shows as a tooltip (text that shows when you hover over an element) in most browsers.
 -->
-                        <figure>
-                            <img src="images/doggie.jpg" alt="doggie" title="Doggie!">
-                            <figcaption>
-                                "Colour me unimpressed."<br>Photo by <a href="https://www.flickr.com/photos/canozdemir/" target="_blank">Can Mustafa Ozdemir</a>.
-                            </figcaption>
+                            <img src="images/doggie.jpg" cite="https://www.flickr.com/photos/canozdemir/" alt="doggie" title="Doggie!">
                         </figure>
                     </section>
                 </section>
@@ -464,7 +460,7 @@
             Reveal.initialize({
 
                 // Display controls in the bottom right corner
-                controls: false,
+                controls: true,
 
                 // Display a presentation progress bar
                 progress: true,

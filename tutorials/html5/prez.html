@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+    <head>
+        <title>HTML in 5 minutes</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/moon.css">
+
+<!-- Optional stylesheet themes for extra sugar and spice (you can just coy and paste the stylesheet name (i.e. white.css).
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/beige.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/black.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/blood.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/league.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/moon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/night.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/serif.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/simple.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/solarized.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/sky.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/white.css">
+
+
+-->
+        <style>
+            .reveal section h1,
+            .reveal section h2,
+            .reveal section h3,
+            .reveal section h4,
+            .reveal section h5,
+            .reveal section h6 {
+                text-transform: none;
+            }            
+            code span {
+                color: orange;
+            }
+            code span.wrong {
+                color: red;
+            }
+            mark {
+                background: transparent;
+                color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <main class="reveal">
+            <article class="slides">
+                <section>
+                    <h1>HTML in 90 Minutes</h1>
+                    <h2>in just under 10 Minutes</h2>
+                    <p>Download Materials:</p>
+                    <p>pixelacademy.ca/tutorials/html5/materials.zip</p>
+                </section>
+                <section id="skill-level">
+                    <h2>Tag vs Element</h2>
+                    <h3>Skill Level: Super-duper Beginners</h3>
+                </section>
+                <section id="big-picture">
+                    <h2>The Big Picture</h2>
+                    <ul>
+                        <li><mark>HTML: Content</mark></li>
+                        <li><em>CSS: Presentation</em>
+                            <ul>
+                                <li>Foundation</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </li>
+                        <li><em>Javascript: Behaviour</em>
+                            <ul>
+                                <li>jQuery</li>
+                                <li>reveal.js</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section id="setup">
+                    <h2>To Follow Along</h2>
+                    <ol>
+                        <li>Install Text Editor (<a href="https://www.sublimetext.com/">Sublime</a>)</li>
+                        <li>Install Chrome Browser</li>
+                        <li>Unzip materials.zip</a></li>
+                        <li>From Editor:
+                            <ol>
+                                <li>File -> Open -> unzipped materials <strong>FOLDER</strong></li>
+                                <li>Click on <em>template.html</em> in left menu</li>
+                                <li>File -> Save As... -> <em>index.html</em></li>
+                            </ol>
+                        </li>
+                        <li>From Browser (Chrome or Safari):
+                            <ol>
+                                <li>File -> Open File... -> <em>index.html</em></li>
+                            </ol>
+                        </li>
+                    </ol>
+                </section>
+                <section id="customize-index">
+                    <h3>Tags</h3>
+                    <h2>Customize <em>index.html</em></h2>
+                    <p><strong>From Editor:</strong></p>
+                    <ol>
+                        <li>Giganicise <em>Act One</em> with <code><span>&lt;h1&gt;</span></code></li>
+                        <li>Slightly giganicize <em>Act One</em> with <code><span>&lt;h2&gt;</span></code></li>
+                    </ol>
+                    <p><strong>Example:</strong> <code><span>&lt;h2&gt;Act One&lt;/h2&gt;</span></code></p>
+                </section>
+                <section id="view-changes">
+                    <h2>View Your Changes</h2>
+                    <ol>
+                        <li>From Editor: File -> Save</li>
+                        <li>From Browser: View -> Reload Page</li>
+                        <li>Bask in the glory of your code</li>
+                    </ol>
+                </section>
+                <section id="element-syntax" data-transition="slide-in fade-out">
+                    <h2>Element Syntax</h2>
+                    <h2><code>&lt;h2&gt;Act One&lt;/h2&gt;</code></h2>
+               </section>
+                <section id="opening-tag" data-transition="fade">
+                    <h2>Opening Tag</h2>
+                    <h2><code><span>&lt;h2&gt;</span>Act One&lt;/h2&gt;</code></h2>
+                </section>
+                <section id="closing-tag" data-transition="fade">
+                    <h2>Closing Tag</h2>
+                    <h2><code>&lt;h2&gt;Act One<span>&lt;/h2&gt;</span></code></h2>
+                </section>
+                <section id="element-content" data-transition="fade-in slide-out">
+                    <h2>Content</h2>
+                    <h2><code>&lt;h2&gt;<span>Act One</span>&lt;/h2&gt;</code></h2>
+                </section>
+                <section id="rules-conventions">
+                    <h2>Some Rules/Conventions:</h2>
+                    <ul>
+<!--
+                        <li>Wrap attribute values in single or double quotes</li>
+-->
+                        <li>Use lowercase text for HTML code</li>
+                        <li>Close tags that have content</li>
+                        <li>Don't mismatch your closing tags
+                            <ul>
+                                <li><code><span>&lt;strong&gt;&lt;em&gt;</span>Yes<span>&lt;/em&gt;&lt;/strong&gt;</span></code></li>
+                                <li><code><span>&lt;strong&gt;&lt;em&gt;</span>No<span class="wrong">&lt;/strong&gt;&lt;/em&gt;</span></span></code></li>
+                            </ul>
+                        </li>
+                        <li>Indent nested elements for readability<br></li>
+                        <li>Whitespace (spaces, new lines, tabs) collapses to a single space</li>
+                    </ul>
+                </section>
+                <section id="the-pitch">
+                    <h2>HTML in 90 Minutes</h2>
+                    <h3>www.pixelacademy.ca</h3>
+                </section>
+                <section id="add-image" id="add-image">
+                    <h3>Attributes</h3>
+                    <h2>Add image to <em>index.html</em></h2>
+                    <p><strong>From Editor:</strong></p>
+                    <ol>
+                        <li>Replace <em>Act Two</em> with <code><span>&lt;img&gt;</span></code></li>
+                        <li>Add file source with <code><span>src</span></code> attribute</li>
+                    </ol>
+                    <p><strong>Example:</strong><code><span>&lt;img src="images/doggie.jpg"&gt;</span></p></code>
+                </section>
+<!--
+                <section id="element-attributes" data-transition="slide-in fade-out">
+                    <h2>Attributes</h2>
+                    <h3><code>&lt;img <span>src="path/to/image"</span>&gt;</code></h3>
+               </section>
+                <section id="attribute-name" data-transition="fade">
+                    <h2>Attribute Name</h2>
+                    <h3><code>&lt;img <span>src</span>="path/to/image"&gt;</code></h3>
+                </section>
+                <section id="attribute-value" data-transition="fade-in slide-out">
+                    <h2>Attribute Value</h2>
+                    <h3><code>&lt;img src=<span>"path/to/image"</span>&gt;</code></h3>
+                </section>
+-->
+                <section id="customize-reveal">
+                    <h3>id Attribute</h3>
+                    <h2>Turn on Slide URLs in <em>index.html</em></h2>
+                    <h3><a href="https://github.com/hakimel/reveal.js#readme" target="_blank">reveal.js readme</a></h3>
+                    <ol>
+                        <li>Scroll to <code><span>Reveal.initialize</span></code> in <em>index.html</em></li>
+                        <li>Turn on URLs by setting <code><span>history: true;</span></code></li>
+                        <li>Customize slide URL with <code><span>&lt;section&gt;</span></code> id attribute</li>
+                    </ol>
+                    <p><strong>Example:</strong> <code><span>&lt;section id="intro"&gt;</span></code></p>
+                </section>
+<!--
+                <section id="id-attribute">
+                    <h2>id Attribute</h2>
+                    <ul>
+                        <li>Popular uses:
+                            <ul>
+                                <li>Assign styles with CSS</li>
+                                <li>Hook into javascript code</li>
+                            </ul>
+                        </li>
+                        <li>Uniquely identifies an element within the document</li>
+                        <li>May not contain any spaces</li>
+                        <li>Avoid periods, colons and '#'</li>
+                    </ul>
+                </section>
+-->
+                <section id="add-icon-font">
+                    <h3>class Attribute</h3>
+                    <h2>Add icon font to <em>index.html</em></h2>
+                    <p><strong>From Editor:</strong></p>
+                    <ol>
+                        <li>Replace <em>Slide Three</em> with <code><span>&lt;i&gt;&lt;/i&gt;</span></code></li>
+                        <li>Add icon font with <code><span>class</span></code> attribute</li>
+                    </ol>
+                    <p><strong>Example:</strong> <code><span>&lt;i class="fa fa-bath"&gt;&lt;/i&gt;</span></code></p>
+                </section>
+                <section>
+                    <i class="fa fa-bath fa-5x"></i>
+                </section>
+<!--
+                <section id="class-attribute">
+                    <h2>class Attribute</h2>
+                    <ul>
+                        <li>Popular uses:
+                            <ul>
+                                <li>assign styles with CSS</li>
+                                <li>hook into javascript code</li>
+                            </ul>
+                        </li>
+                        <li>Separate multiple classes with a space</li>
+                        <li>Individual class names (ex. <code><span>fa-bath</span></code>) can occur multiple times in a document</li>
+                   </ul>
+                </section>
+                <section id="homework">
+                    <h2>Homework</h2>
+                    <h3>(use cheatsheet.html if you get stuck)</h3>
+                    <ul>
+                        <li>Add an ordered (numbered) list with <code><span>&lt;ol&gt;</span></code></li>
+                        <li>Change your reveal.js theme in the <code><span>&lt;head&gt;</span></code></li>
+                        <li>Link to another slide with <code><span>&lt;a&gt;</span></code></li>
+                    </ul>
+                </section>
+-->
+                <section id="the-end">
+                    <h2>Register for HTML in 90 Minutes</h2>
+                    <h3>www.pixelacademy.ca</h3>
+                    <p>(Calgary only)</p>
+                </section>
+                <section id="no-calgary">
+                    <i class="fa fa-sad-face"></i>
+                </section>
+            </article>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Push each slide change to the browser history
+                history: true,
+
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+
+                // Change the presentation direction to be RTL
+                rtl: false,
+
+                // Randomizes the order of slides each time the presentation loads
+                shuffle: false,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Flags if we should show a help overlay when the questionmark
+                // key is pressed
+                help: true,
+
+                // Flags if speaker notes should be visible to all viewers
+                showNotes: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Use this method for navigation when auto-sliding
+                autoSlideMethod: Reveal.navigateNext,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+                // Number of pixels to move the parallax background per slide
+                // - Calculated automatically unless specified
+                // - Set to 0 to disable movement along an axis
+                parallaxBackgroundHorizontal: null,
+                parallaxBackgroundVertical: null
+
+            });
+        </script>
+    </body>
+<!--
+Good citizens respect attribution and open license.
+
+Some of this content is based on the MDN HTML Element Reference: https://developer.mozilla.org/en/docs/Web/HTML/Element
+
+Unless otherwise indicated, this content is available under the terms of the Creative Commons Attribution-ShareAlike license (CC-BY-SA), v4.0 or any later version: https://creativecommons.org/licenses/by-sa/4.0/
+
+Reveal.js is distributed under the following license: https://github.com/hakimel/reveal.js/blob/master/LICENSE
+-->
+
+<!-- THE END! -->
+</html>

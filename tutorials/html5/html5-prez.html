@@ -48,36 +48,35 @@
         <main class="reveal">
             <article class="slides">
                 <section>
-                    <h3>Excercise 1 from:</h3>
+                    <p>Exercise 1 from</p>
                     <h1>HTML in 90 Minutes</h1>
-                    <h2>(in under 10 Minutes)</h2>
-                </section>
-                <section id="skill-level">
-                    <h2>Elements and tags</h2>
-                    <h3>Skill Level: Super-duper Beginner</h3>
+                    <h2>Browser literacy for total n00bs*</h2>
+                    <em>* newbie or hopeful novice</em>
                 </section>
                 <section id="big-picture">
                     <h2>The Big Picture</h2>
                     <ul>
-                        <li><mark>HTML: Content</mark></li>
-                        <li><em>CSS: Presentation (not the slide type)</em>
+                        <li><mark>HTML is mostly content</mark></li>
+                        <li><em>Javascript mostly adds functionality</em>
                             <ul>
-                                <li><em><a href="http://fontawesome.io/">Font Awesome</a> icon fonts</em></li>
+                                <li><em>using <a href="http://lab.hakim.se/reveal-js/">reveal.js</a> presentation framework</em></li>
+                                <li><em>try changing settings in 2nd <mark>&lt;script&gt;</mark></em></li>
                             </ul>
                         </li>
-                        <li><em>Javascript: Behaviour</em>
+                        <li><em>CSS mostly makes things pretty <s>ugly</s></em>
                             <ul>
-                                <li><em><a href="http://lab.hakim.se/reveal-js/">reveal.js</a> Presentation Framework (slide type)</em></li>
+                                <li>using <em><a href="http://fontawesome.io/">Font Awesome</a> for icon fonts</em></li>
+                                <li><em>try changing reveal.js css theme in <mark>&lt;head&gt;</mark></em></li>
                             </ul>
                         </li>
                     </ul>
                 </section>
-                <section id="setup">
-                    <h2>Follow Along</h2>
+                <section id="setup" data-autoslide="10000">
+                    <h2>Setting up</h2>
                     <ol>
-                        <li>Install Text Editor (<a href="https://www.sublimetext.com/">Sublime</a>, <a href="https://atom.io/">Atom</a>)</li>
                         <li>Install <a href="https://www.google.ca/chrome/browser/desktop/">Chrome Browser</a></li>
-                        <li>Download and unzip materials.zip</a>:
+                        <li>Install modern text editor (<a href="https://www.sublimetext.com/">Sublime</a>, <a href="https://atom.io/">Atom</a>)</li>
+                        <li>Download and unzip <em>materials.zip</em></a>:
                             <ul>
                                 <li style="list-style: none;"><a href="http://pixelacademy.ca/tutorials/html5/materials.zip">pixelacademy.ca/tutorials/html5/materials.zip</a></li>
                             </ul>
@@ -86,52 +85,53 @@
                             <ol>
                                 <li>File -> Open -> unzipped materials <strong>FOLDER</strong></li>
                                 <li>Click on <em>template.html</em> in left menu</li>
-                                <li>File -> Save As... -> <em>index.html</em></li>
+                                <li>File -> Save As... -> <em>my-project.html</em> (or whatever)</li>
                             </ol>
                         </li>
-                        <li>From Browser (Chrome or Safari):
+                        <li>From Browser:
                             <ol>
-                                <li>File -> Open File... -> <em>index.html</em></li>
+                                <li>File -> Open File... (Control-O) -> <em>my-project.html</em></li>
                             </ol>
                         </li>
                     </ol>
                 </section>
-                <section id="customize-index">
-                    <h3>Excercise 1</h3>
-                    <h2>Add section header to <em>index.html</em></h2>
-                    <p><strong>From Editor:</strong></p>
-                    <ol>
-                        <li>Giganticise "<em>Act One</em>"" with <code><span>&lt;h1&gt;</span></code></li>
-                        <li>Slightly giganticize "<em>Act One</em>"" with <code><span>&lt;h2&gt;</span></code></li>
-                    </ol>
-                    <p><strong>Example:</strong> <code><span>&lt;h2&gt;Act One&lt;/h2&gt;</span></code></p>
+                <section id="skill-level">
+                    <p>Excercise 1</p>
+                    <h2>Elements and tags</h2>
+                    <h3>Wrapping a slide heading</h3>
                 </section>
-                <section id="view-changes">
-                    <h2>View Your Changes</h2>
+                <section id="wrapping-practice" data-autoslide="10000">
+                    <h3>Edit <em>my-project.html</em></h3>
+                    <ul>
+                    <li style="list-style: none;">From Editor:
+                        <ul>
+                            <li>Giganticise "<em>Act One</em>" with <code><span>&lt;h1&gt;</span></code>, or</li>
+                            <li><em>Slightly</em> giganticize "<em>Act One</em>" with <code><span>&lt;h2&gt;</span></code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><strong>Example:</strong> <code><span>&lt;h2&gt;Act One&lt;/h2&gt;</span></code></p>
+                    <h3>View changes in browser</h3>
                     <ol>
                         <li>From Editor: File -> Save</li>
-                        <li>From Browser: View -> Reload Page</li>
-                        <li>Bask in the glory of your code</li>
+                        <li>From Browser: click <mark><i class="fa fa-repeat"></i></mark> to refresh page</li>
+                        <li>Bask in the glory of your gigantic text</li>
                     </ol>
                 </section>
-                <section id="element-syntax" data-transition="slide-in fade-out">
-                    <h2>Element Syntax</h2>
-                    <h2><code>&lt;h2&gt;Act One&lt;/h2&gt;</code></h2>
-               </section>
+                <section id="wrapping-theory" data-transition="slide-in fade-out">
+                    <h2>Wrapping content</h2>
+                    <h2><code>&lt;h2&gt;<span>Act One</span>&lt;/h2&gt;</code></h2>
+                </section>
                 <section id="opening-tag" data-transition="fade">
-                    <h2>Opening Tag</h2>
+                    <h2>Opening tag</h2>
                     <h2><code><span>&lt;h2&gt;</span>Act One&lt;/h2&gt;</code></h2>
                 </section>
                 <section id="closing-tag" data-transition="fade">
-                    <h2>Closing Tag</h2>
+                    <h2>Closing tag</h2>
                     <h2><code>&lt;h2&gt;Act One<span>&lt;/h2&gt;</span></code></h2>
                 </section>
-                <section id="element-content" data-transition="fade">
-                    <h2>Content</h2>
-                    <h2><code>&lt;h2&gt;<span>Act One</span>&lt;/h2&gt;</code></h2>
-                </section>
                 <section id="element-all" data-transition="fade-in slide-out">
-                    <h2>Element</h2>
+                    <h2>The whole thing is an element</h2>
                     <h2><mark><code>&lt;h2&gt;<span>Act One</span>&lt;/h2&gt;</code></mark></h2>
                 </section>
                 <section id="rules-conventions">
@@ -151,101 +151,31 @@
                     </ul>
                 </section>
                 <section id="html-in-90">
-                    <h2>HTML in 90 Minutes</h2>
-                    <img src="images/workshop.jpg" alt="8-person Workshop">
-                    <h3>www.pixelacademy.ca</h3>
+                    <h3>HTML in 90 Minutes</h3>
+                    <img src="images/workshop.jpg" alt="8-person Workshop"><br>
+                    Mentorship sessions every month
                 </section>
                 <section id="add-image" id="add-image">
-                    <h3>Excercise 2</h3>
-                    <h2>Add image to <em>index.html</em></h2>
-                    <p><strong>From Editor:</strong></p>
-                    <ol>
-                        <li>Replace "<em>Act Two</em>"" with <code><span>&lt;img&gt;</span></code></li>
-                        <li>Add file source with <code><span>src</span></code> attribute</li>
-                    </ol>
-                    <p><strong>Example:</strong><code><span>&lt;img src="images/doggie.jpg"&gt;</span></p></code>
+                    <h3>Learn how this code...</h3>
+                    <code><mark>&lt;img src="images/doggie.jpg"&gt;</mark></code>
                 </section>
-<!--
-                <section id="element-attributes" data-transition="slide-in fade-out">
-                    <h2>Attributes</h2>
-                    <h3><code>&lt;img <span>src="path/to/image"</span>&gt;</code></h3>
-               </section>
-                <section id="attribute-name" data-transition="fade">
-                    <h2>Attribute Name</h2>
-                    <h3><code>&lt;img <span>src</span>="path/to/image"&gt;</code></h3>
+                <section id="doggie-image">
+                    <h3>...becomes adorable!</h3>
+                    <img src="images/doggie.jpg" alt="adorbs" cite="https://www.flickr.com/photos/canozdemir/">
                 </section>
-                <section id="attribute-value" data-transition="fade-in slide-out">
-                    <h2>Attribute Value</h2>
-                    <h3><code>&lt;img src=<span>"path/to/image"</span>&gt;</code></h3>
-                </section>
--->
                 <section id="add-icon-font">
-                    <h3>Exercise 3</h3>
-                    <h2>Add icon font to <em>index.html</em></h2>
-                    <p><strong>From Editor:</strong></p>
-                    <ol>
-                        <li>Replace "<em>Act Three</em>"" with <code><span>&lt;i&gt;&lt;/i&gt;</span></code></li>
-                        <li>Add icon font with <code><span>class</span></code> attribute</li>
-                    </ol>
-                    <p><strong>Example:</strong> <code><span>&lt;i class="fa fa-bath"&gt;&lt;/i&gt;</span></code></p>
+                    <h3>And how this ancient element...</h3> 
+                    <code><span>&lt;i class="fa fa-bath fa-5x"&gt;&lt;/i&gt;</span></code>
                 </section>
                 <section>
+                    <h3>becomes a bathtub?</h3>
                     <i class="fa fa-bath fa-5x"></i>
                 </section>
-<!--
-                <section id="class-attribute">
-                    <h2>class Attribute</h2>
-                    <ul>
-                        <li>Popular uses:
-                            <ul>
-                                <li>assign styles with CSS</li>
-                                <li>hook into javascript code</li>
-                            </ul>
-                        </li>
-                        <li>Separate multiple classes with a space</li>
-                        <li>Individual class names (ex. <code><span>fa-bath</span></code>) can occur multiple times in a document</li>
-                   </ul>
-                </section>
-                <section id="customize-reveal">
-                    <h3>Exercise 4</h3>
-                    <h2>Turn on Slide URLs in <em>index.html</em></h2>
-                    <h3><a href="https://github.com/hakimel/reveal.js#readme" target="_blank">reveal.js readme</a></h3>
-                    <ol>
-                        <li>Scroll to <code><span>Reveal.initialize</span></code> in <em>index.html</em></li>
-                        <li>Turn on URLs by setting <code><span>history: true;</span></code></li>
-                        <li>Customize slide URL with <code><span>&lt;section&gt;</span></code> id attribute</li>
-                    </ol>
-                    <p><strong>Example:</strong> <code><span>&lt;section id="intro"&gt;</span></code></p>
-                </section>
-                <section id="id-attribute">
-                    <h2>id Attribute</h2>
-                    <ul>
-                        <li>Popular uses:
-                            <ul>
-                                <li>Assign styles with CSS</li>
-                                <li>Hook into javascript code</li>
-                            </ul>
-                        </li>
-                        <li>Uniquely identifies an element within the document</li>
-                        <li>May not contain any spaces</li>
-                        <li>Avoid periods, colons and '#'</li>
-                    </ul>
-                </section>
-                <section id="homework">
-                    <h2>Homework</h2>
-                    <h3>(use cheatsheet.html if you get stuck)</h3>
-                    <ul>
-                        <li>Add an ordered (numbered) list with <code><span>&lt;ol&gt;</span></code></li>
-                        <li>Change your reveal.js theme in the <code><span>&lt;head&gt;</span></code></li>
-                        <li>Link to another slide with <code><span>&lt;a&gt;</span></code></li>
-                    </ul>
-                </section>
--->
                 <section id="the-end">
+                    <p>Calgary-only</p>
                     <h1>HTML in 90 Minutes</h1>
-                    <h2>www.pixelacademy.ca</h2>
-                    <h3>Registration: $20</h3>
-                    <p>(Calgary only)</p>
+                    <h2>Browser literacy for total n00bs</h2>
+                    <p>Registration: $20</p>
                 </section>
                 <section id="no-calgary" data-transition="fade-in none">
                     <i class="fa fa-frown-o fa-5x"></i>

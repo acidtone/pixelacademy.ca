@@ -1,9 +1,19 @@
 <!doctype html>
 <html>
     <head>
+
+<!-- 
+This is a comment tag. The comments in cheatsheet.html go into more detail about an HTML page. 
+-->
+
         <title>Hello World!</title>
-        <meta charset="utf-8">
+<!--
+This <link> tag installs the Font Awesome icon font library. It's like fancy wingdings for the browser.
+-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!--
+The next two <link> tags install the 1) base reveal.js CSS stylesheet and 2) the reveal.js theme stylesheet.
+-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/white.css">
 
@@ -24,6 +34,9 @@
 -->
     </head>
     <body>
+<!--
+The "reveal" and "slides" classes are required for reveal.js to convert <section> tags into slides.
+-->    
         <main class="reveal">
             <article class="slides">
                 <section>
@@ -37,7 +50,13 @@
                 </section>
             </article>
         </main>
+<!--
+Javaswcript is like a car engine. This <script> tag installs the engine in the car...
+-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.js"></script>
+<!--
+...and this <script> tag turns the engine on with the supplied settings.
+-->
         <script>
             Reveal.initialize({
 
@@ -143,6 +162,4 @@ Unless otherwise indicated, this content is available under the terms of the Cre
 
 Reveal.js is distributed under the following license: https://github.com/hakimel/reveal.js/blob/master/LICENSE
 -->
-
-<!-- THE END! -->
 </html>

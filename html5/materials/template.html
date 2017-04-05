@@ -35,7 +35,7 @@ The next two <link> tags install the 1) base reveal.js CSS stylesheet and 2) the
     </head>
     <body>
 <!--
-The "reveal" and "slides" classes are required for reveal.js to convert <section> tags into slides.
+The "reveal" and "slides" classes (a global HTML5 attribute) are required for reveal.js to convert <section> tags into slides. <main> and <article> can be replaced with <div> but fuck divs.
 -->    
         <main class="reveal">
             <article class="slides">
@@ -51,7 +51,7 @@ The "reveal" and "slides" classes are required for reveal.js to convert <section
             </article>
         </main>
 <!--
-Javaswcript is like a car engine. This <script> tag installs the engine in the car...
+Javascript is like a car engine. This <script> tag installs the engine in the car...
 -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.js"></script>
 <!--
@@ -65,7 +65,7 @@ Javaswcript is like a car engine. This <script> tag installs the engine in the c
 
                 // Display a presentation progress bar
                 progress: true,
-
+  
                 // Display the page number of the current slide
                 slideNumber: false,
 

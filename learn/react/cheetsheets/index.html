@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Building HTML5 Presentations for Non-coders</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/reveal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/css/theme/moon.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <style>
+            .reveal section h1,
+            .reveal section h2,
+            .reveal section h3,
+            .reveal section h4,
+            .reveal section h5,
+            .reveal section h6 {
+                text-transform: none;
+            }
+            code {
+                white-space: nowrap;
+            }
+            code.multiline {
+                text-align: left;
+            }
+            code span {
+                color: orange;
+            }
+            code span.wrong {
+                color: red;
+            }
+            #big-picture strong {
+                color: orange;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="reveal">
+            <article class="slides">
+                <section>
+                    <h4>Spoiler Alert: Tutorial Cheetsheet</h4>
+                    <h2>Code Academy: <a href="https://www.codecademy.com/learn/react-101" target="_blank">Learn ReactJS Part 1.1</a></h2>
+                    <h3>Intro to JSX (15 steps)</h3>
+                </section>
+                <section id="instruction-2">
+                    <h3>Step 2/15: Hello World</h3>
+                    <h4><code><span>const h1 = &lt;h1&gt;Hello world&lt;/h1&gt;;</span></code></h4>
+                </section>
+                <section id="instruction-5">
+                    <h3>Step 5/15: JSX Elements</h3>
+                    <h4><code><span>&lt;h1&gt;Hello world&lt;/h1&gt;</span></code></h4>
+                </section>
+                <section id="instruction-6">
+                    <h3>Step 6/15: JSX Elements and Their Surroundings</h3>
+                    <h4><code><span>let myArticle = &lt;article&gt;&lt;/article&gt;;</span></code></h4>
+                </section>
+                <section id="instruction-7.1">
+                    <h3>Step 7/15: Attributes in JSX</h3>
+                    <h4>Instruction 1</h4>
+                    <h4><code><span>const p1 = &lt;p&gt;foo&lt;/p&gt;;</span></code></h4>
+                </section>
+                <section id="instruction-7.2">
+                    <h3>Step 7/15: Attributes in JSX</h3>
+                    <h4>Instruction 2</h4>
+                    <h4><code>const p1 = &lt;p&gt;foo&lt;/p&gt;;</code></h4>
+                    <h4><code><span>const p1 = &lt;p&gt;foo&lt;/p&gt;;</span></code></h4>
+                </section>
+                <section id="instruction-7.3">
+                    <h3>Step 7/15: Attributes in JSX</h3>
+                    <h4>Instruction 3</h4>
+                    <h4><code>const p1 = &lt;p <span>class="large"</span>&gt;foo&lt;/p&gt;;</code></h4>
+                    <h4><code>const p1 = &lt;p <span>class="small"</span>&gt;foo&lt;/p&gt;;</code></h4>
+                </section>
+                <section id="instruction-8">
+                    <h3>Step 8/15: Nested JSX</h3>
+                    <h4><code class="multiline"><span>
+                        var myDiv = (<br/>
+                          &lt;div&gt;
+                            &lt;h1&gt;Hello world&lt;/h1&gt;<br/>
+                          &lt;/div&gt;<br/>
+                        )
+                    </span></code></h4>
+                </section>
+                <section id="instruction-9">
+                    <h3>Step 9/15: JSX Outer Elements</h3>
+                    <h4><code class="multiline">
+                        const blog = (<br/>
+                          <span>&lt;div&gt;</span><br/>
+                            &lt;img src="pics/192940u73.jpg" /&gt;<br/>
+                            &lt;h1&gt;<br/>
+                              Welcome to Dan's Blog!<br/>
+                            &lt;/h1&gt;<br/>
+                            &lt;article&gt;<br/>
+                              Wow I had the tastiest sandwich today...<br/>
+                            &lt;/article&gt;<br/>
+                          <span>&lt;/div&gt;</span><br/>
+                        );                    
+                    </code></h4>
+                </section>
+                <section id="instruction-10">
+                    <h3>Step 10/15: Rendering JSX</h3>
+                    <h4><code class="multiline"><span>
+                        ReactDOM.render(<br/>&lt;h1&gt;Hello world&lt;/h1&gt;, <br/>document.getElementById('app')<br/>);
+                    </span></code></h4>
+                </section>
+                <section id="instruction-11">
+                    <h3>Step 11/15: Rendering JSX I</h3>
+                    <h4><code class="multiline"><span>
+                        ReactDOM.render(<br/>&lt;h1&gt;Render me!&lt;/h1&gt;, <br/>document.getElementById('app')<br/>);
+                    </span></code></h4>
+                </section>
+                <section id="instruction-12.1">
+                    <h3>Step 12/15: Rendering JSX II</h3>
+                    <h4>Instruction 1</h4>
+                    <h4><code><span>&lt;span id="container"&gt;&lt;/span&gt;</span></code></h4>
+                </section>
+                <section id="instruction-12.2">
+                    <h3>Step 12/15: Rendering JSX II</h3>
+                    <h4>Instruction 2</h4>
+                    <h4><code class="multiline"><span>
+                        ReactDOM.render(<br/>&lt;h1&gt;Render me!&lt;/h1&gt;, <br/>document.getElementById('container')<br/>);
+                    </span></code></h4>
+                </section>
+                <section id="instruction-13.1">
+                    <h3>Step 13/15: Passing a Variable to ReactDOM.render()</h3>
+                    <h4>Instruction 1</h4>
+                    <h4><code><span>let myList = whatevs;</span></code></h4>
+                </section>
+                <section id="instruction-13.2">
+                    <h3>Step 13/15: Passing a Variable to ReactDOM.render()</h3>
+                    <h4>Instruction 2</h4>
+                    <h4><code class="multiline"><span>
+                        ReactDOM.render(<br/>myList, <br/>document.getElementById('app')<br/>);
+                    </span></code></h4>
+                </section>
+                <section id="slack">
+                    <h3>More Cheetsheets</h3>
+                    <h3>Free Support on Gitter</h3>
+                </section>
+            </article>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1/js/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Push each slide change to the browser history
+                history: true,
+
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+
+                // Change the presentation direction to be RTL
+                rtl: false,
+
+                // Randomizes the order of slides each time the presentation loads
+                shuffle: false,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Flags if we should show a help overlay when the questionmark
+                // key is pressed
+                help: true,
+
+                // Flags if speaker notes should be visible to all viewers
+                showNotes: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Use this method for navigation when auto-sliding
+                autoSlideMethod: Reveal.navigateNext,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition style
+                transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+                // Number of pixels to move the parallax background per slide
+                // - Calculated automatically unless specified
+                // - Set to 0 to disable movement along an axis
+                parallaxBackgroundHorizontal: null,
+                parallaxBackgroundVertical: null
+
+            });
+        </script>
+    </body>
+<!--
+Good citizens respect attribution and open license.
+
+Some of this content is based on the MDN HTML Element Reference: https://developer.mozilla.org/en/docs/Web/HTML/Element
+
+Unless otherwise indicated, this content is available under the terms of the Creative Commons Attribution-ShareAlike license (CC-BY-SA), v4.0 or any later version: https://creativecommons.org/licenses/by-sa/4.0/ 
+
+Reveal.js is distributed under the following license: https://github.com/hakimel/reveal.js/blob/master/LICENSE
+-->
+
+<!-- THE END! -->
+</html>
